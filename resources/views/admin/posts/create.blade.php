@@ -12,7 +12,7 @@
             <x-form.field>
                 <x-form.label name="category"/>
 
-                <label for="category_id"></label><select name="category_id" id="category_id">
+                <select name="category_id" id="category_id">
                     @foreach (\App\Models\Category::all() as $category)
                         <option
                             value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>{{ ucwords($category->name) }}</option>
@@ -22,7 +22,7 @@
                 <x-form.error name="category"/>
             </x-form.field>
 
-            <x-form.button>Publish</x-form.button>
+            <x-form.button> Publish </x-form.button>
         </form>
     </x-setting>
 
