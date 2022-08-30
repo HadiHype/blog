@@ -36,8 +36,6 @@
                     <x-dropdown-item href="/admin/posts/create" :active="request()->is('admin/posts/create')">New Post</x-dropdown-item>
                     @endadmin
 
-
-
                     <form id="logout-form" method="POST" action="/logout" class="hidden">
                         @csrf
 

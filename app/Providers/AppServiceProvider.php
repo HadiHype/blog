@@ -44,6 +44,7 @@ class AppServiceProvider extends ServiceProvider
         Paginator::useTailwind();
         Model::unguard();
 
+
         Gate::define('admin', function (User $user) {
             return $user->username === 'HadiHoteit';
         });
